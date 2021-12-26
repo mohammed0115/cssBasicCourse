@@ -1,0 +1,384 @@
+box-sizing :border-box;
+border-collapse:seprate
+border-spacing:10px;
+--------------------------------------------------------------------------------------------------------
+css variable
+:root{
+  --mainColor:red;
+  }
+
+body{
+  color:var(--mainColor,#eee);
+}
+
+
+---------------------------------------------------------------------------------------------------------
+#margin collaps
+ 1. vertical margin only can make collapse
+ 2. bigger margin make collapse
+ 3. cannot occur collapse if there any element between two tag collapse has styled 
+ 4. nesting element does not prevent collapse if has not styled
+
+-----------------------------------------------------------------------------------------------------------
+#box-sizing
+ box-sizing:content-size; the real content
+ box-sizing:border-box; #
+-------------------------------------------------------------------------------------------------------------
+backgroun-color:#eee !important;
+the !important if well be base not changed
+
+
+-----------------------------------------------------------------------------------------------------------
+the way to select elements:
+1. class  .className{}
+2. id     #id{}
+3. tag    p{}
+4. nesting
+    if there div tag has inside it p tag  
+    div p{
+     }
+     or div .class{}
+     or div #id{}
+---------------------------------------------------------------------------
+default font-size 16px
+css units
+px
+em  is time 
+rem  is root time (html) 
+percentage   100%
+vw   is view port width (10% from total width)
+
+
+
+------------------------------------------------------------------------------
+     
+
+
+new css learn:
+             H   V   blur  speed   color       type 
+box-shadow: 5px 5px  5px    5px    #A64942    inset or outset;
+border-radius:0px 0px 0px 0px;
+
+transform:rotate(5deg);
+---------------------------------------------
+# margin
+1.step 1
+margin-top:10px or 0.1em;
+margin-right:10px or  0.1em;
+margin-bottom:10px or  0.1em;
+margin-left:10px or  0.1em;
+2.step 2
+margin-top:10%;
+margin-right:10%;
+margin-bottom:10%;
+margin-left:10%;
+3. step 3
+margin-top:auto;
+margin-right:auto;
+margin-bottom:auto;
+margin-left:auto;
+4. step 4
+ margin:10px 10px 10px 10px; 
+ margin:10% 10% 10% 10%;
+ margin:auto auto auto auto;
+ margin:0.1em 0.1em 0.1em 0.1em; 
+ margin:0.1em 10% auto 10px;
+5. step 5 
+     	 margin:10px 10px ; 
+	 margin:10% 10% ;
+	 margin:auto auto;
+	 margin:0.1em 0.1em; 
+	 margin:0.1em 10%;
+-------------------------------------------------------------
+#border
+1. step 1
+border-width:10px or 10% or .1em ;
+border-color:red or rgb(255 0 0) or #ff000;
+border-style:solid or dashed or dotted or double or 
+1.solid
+2.dashed
+3. dotted
+4.double
+5.hidden
+6.inherit
+7.initial
+8.inset
+9.none
+10.outset
+11.unset
+12.revert
+13.redge
+
+
+
+2. step 2:
+ border-top-width:10px;
+ border-right-width:10px;
+ border-bottom-width:10px;
+ border-left-width:10px;
+  
+ border-top-color:red;
+ border-right-color:blue;
+ border-bottom-color:green;
+ border-left-color:yallow;
+ 
+ border-top-style:solid;
+ border-right-style:dotted;
+ border-bottom-style:solid;
+ border-left-style:dotted;
+
+3. step 3
+ in simple
+  border:10px red solid;
+  or
+  border:red 10px solid;
+  or 
+  border:red solid 10px;
+  or 
+  border:10px solid red;
+  or 
+  border:solid red 10px;
+
+----------------------------------------------------------------------------------------------------
+#padding
+1.step 1
+padding-top:10px or 0.1em;
+padding-right:10px or  0.1em;
+padding-bottom:10px or  0.1em;
+padding-left:10px or  0.1em;
+2.step 2
+padding-top:10%;
+padding-right:10%;
+padding-bottom:10%;
+padding-left:10%;
+3. step 3
+padding-top:auto;
+padding-right:auto;
+padding-bottom:auto;
+padding-left:auto;
+4. step 4
+ padding:10px 10px 10px 10px; 
+ padding:10% 10% 10% 10%;
+ padding:auto auto auto auto;
+ padding:0.1em 0.1em 0.1em 0.1em; 
+ padding:0.1em 10% auto 10px;
+5. step 5 
+     	 padding:10px 10px ; 
+	 padding:10% 10% ;
+	 padding:auto auto;
+	 padding:0.1em 0.1em; 
+	 padding:0.1em 10%;
+-----------------------------------------------------------------------------------------------------------------
+#background
+1. background-color:red;
+2. background-image:url();
+3. background-size:top right bottom left; as 10px or 10% or .1em
+          background-size:cover; or background-size:conain;
+4. background-repeat:no-repeat or repeat-x,repeat-y,repreat
+5. background-attachment:scroll or fixed;
+6. background-position:top right bottom left; as pxel
+7. background-clip:initial;
+8. background-origin:initial;
+-------------------------------------------------------------------------------------------------------------------
+#text and letters management
+1. line-height:10px;  best line-height:160% or 1.6;
+2. letter-spacing:10px;
+   word-spacing: 10px;
+3. text-align:left or right or center;
+4. direction: rtl or ltr;
+5. font-size:40px;
+6. font-family:serif;
+7. font-weight:100 to 900 or bold;
+8. text-shadow:H-shadow v-shadow blur color;
+   example:
+     text-shadow:5px 0 0 red;
+9. color:red;
+10. vertical-align:middle or top or left or bottom or right;
+11. text-decration:none or line-through or underline or overline; 
+12. text-transform:cepitalize or uppercase or lowercase;
+13. text-indent:10px; left indentation lik python code.
+14. white-spacing:normal or nowrap;
+15. word-break:break-all or break-word; if the word is very long to avoid overflow
+16. text-overflow:ellipsis or inherit or clip or unset
+17. font-style:italic or normal or oblique or inherit or initial or unset
+18. font-variant:small-caps
+
+---------------------------------------------------------------------------------------------------------------------
+#outline:
+outline:10px red solid;
+---------------------------------------------------------------------------------------------------------------------
+#display
+
+value can be:
+1.none 
+   - hidde the tag
+   - hidde the space tage of the work follow  
+2. block :
+     - tak full width if no width 
+     - add line break
+     - can accespt padding,margin,width,height
+3. inline : 
+         - accept padding,margin [just left + right]
+         - can not add line break
+         - do not take full width
+         - make overfollow if padding is big and the next tag is block
+         - allow element before and after
+4. inline-block
+     - allow element before and after
+     - can accespt padding,margin,width,height
+5. table
+-------------------------------------------------------------
+
+visiblity: hidden or visible
+   the different between visiblity:hidden th space of tage is stile found after hidded but in display:none the space of 
+   tage also well be hidde.
+----------------------------------------------------------------------------------------------------------------------------
+#overflow
+ overflow:visible; this is the default value
+  value can :
+   1. visible
+   2. hodden
+   3. fixed
+   4. scroll
+   5. auto
+overflow-y:scroll; vertical
+overfflow-x:scroll; horizental
+                   
+--------------------------------------------------------------------------------------------------------------------------------
+#float:
+float:left or right;
+all tag used float 
+after it creat tag as display block and with class clear
+  tag{
+    display:block;
+    clear:both or left or right;
+   }
+---------------------------------------------------------------------------------------------------------------------------------
+width:calc((100% - 60px)/5);
+---------------------------------------------------------------------------------------------------------------------------------
+opacity:1 to 0.1 to 0; 0 hidde text and color
+---------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------
+#list
+1. list-style-type: none;
+    value can be:
+      - disc
+      - circle
+      - square
+      - decimal
+      - none 
+      - etc
+2. list-style-position:outside or inside;
+3. list-style-image:url();
+ can be all as it is:
+   list-style: type position image;
+   list-style:disc inside ;
+    or 
+   list-style:url() inside;
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+the property inherit used to inherit  it's pareent property
+padding:inherit;
+if parent padding 10px well 10px
+--------------------------------------------------------------------------------------------------------------------------------
+#mouse management
+
+  -------------------------------------------
+   cursor:pointer;
+   1.pointer
+   2. grab
+   3. move
+------------------------------------------------------
+#mouse pesudo class event -visited,moved,clicked,hover,checked,select,focus ,empty -where tag is empty value-, 
+.class:event{
+     
+     }
+pesudo element
+  1. first-letter
+  2. first-line
+  3. before
+  4. after 
+      in after is import to add content:"";
+    for example :
+    .class ::after {
+       content:"";
+     }
+  5. content
+  6. selection -shape all text in tag by mouse and shift or ctl+A
+ .class::first-letter{
+
+  }
+
+----------------------------------------------------------------------------------------------------------------------------------
+#position:
+  position:relative;
+ has value:
+  1. static not efficted by top bottom and leftright
+  2. relative depending on top bottom right left property
+  3. absolute 
+      if the tag is absolute position then depend on parent -should be position:relative- if the parent is not relative 
+position go to parent to parent unitl body parent 
+   4. fixed
+   5. sticky
+     depending on top bottom right left well be fixed position when scrolling 
+-----------------------------------------------------------------------------------------------------------------------------------
+# z-index
+
+
+
+
+####################################################################################################################################
+              لعمل مثلث او نصف دائرة بإستخدام ال css 
+
+1. width:0;
+2. hieght:0;
+3. border-width:square-width as px;
+   border-style:solid;
+   border-color: top-color right-color bottom-color left-color;
+ mybe one of them can colored it as transparent;
+
+
+
+example 
+
+    	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=di, initial-scale=1.0">
+	    <title>Document</title>
+	    <link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+	    <div></div>
+	</body>
+	</html>
+
+
+
+
+
+csss 
+
+  div{
+    width: 0px;
+    height:0px;
+    border-width: 100px;
+    border-style: solid;
+    border-color: red green green red;
+    border-radius:50%;
+    transform: rotate(135deg);
+}
+------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------
+
+                                                                                                              يمكن تصميم list بإستخدام icon
+							1. عن طريق إستخدام  before:: 
+						        2. عن  الطريقه القديمة بال css
+
